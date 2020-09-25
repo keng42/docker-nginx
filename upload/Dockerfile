@@ -35,6 +35,6 @@ RUN NGINX_ARGS=$(nginx -V 2>&1 | sed -n -e 's/^.*arguments: //p') \
   make modules
 
 
-FROM nginx:${NGINX_VERSION}
+FROM nginx:1.19.2
 
 COPY --from=build /usr/src/nginx-${NGINX_VERSION}/objs/ngx_http_upload_module.so /usr/lib/nginx/modules/
