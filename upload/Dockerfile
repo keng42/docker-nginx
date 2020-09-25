@@ -7,6 +7,7 @@ RUN apt-get update && \
   openssh-client \
   git \
   wget \
+  unzip \
   libxml2 \
   libxslt1-dev \
   libpcre3 \
